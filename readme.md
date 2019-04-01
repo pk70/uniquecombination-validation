@@ -63,7 +63,8 @@ $validator = Validator::make($request->all(), [
 ```
 
 You can also use `any separator` like`('-','+')` as your need.
-You can use and `sort of combination` this
+You can use and `sort of combination` this.
+This package is `case-sensitive`
 
 # License
 
