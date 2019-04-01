@@ -1,6 +1,6 @@
 {
     "name": "discover/uniquecombination",
-    "description": "unique check validation by combination value",
+    "description": "unique check validation by any combination value like comma separated value duplicate entry check",
     "license": "MIT",
     "authors": [
         {
