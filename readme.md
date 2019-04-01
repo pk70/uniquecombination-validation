@@ -48,6 +48,20 @@ $request->validate([
     'name_1' => 'required|unique_combination:my_table,column_1,","',
 ]);
 ```
+
+### Example-1
+
+If you have a database table `my_table` and column which name is `name_string` and the value is `(akash-jhon-jannat)` already exists.
+
+Your input field name is `name` and `value` is `(Jannat-Jhon-akash)`.
+You want to check unique validation with your database column so that duplicate entry prevent with this comma separated combination:
+
+```php
+$request->validate([
+    'name' => 'required|unique_combination:my_table,name_string,"-"',
+]);
+```
+
 You can also use `any separator` like`('-','+')` as your need.
 You can use and `sort of combination` this
 
