@@ -2,6 +2,14 @@
     "name": "discover/uniquecombination",
     "description": "unique check validation by any combination value like comma separated value duplicate entry check",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "validator",
+        "unique",
+        "combination",
+        "comma separated"
+    ],
+    "homepage": "https://github.com/pk70/uniquecombination-validation",
     "authors": [
         {
             "name": "Moinul Islam Sajib",
