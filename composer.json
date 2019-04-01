@@ -1,5 +1,5 @@
 {
-    "name": "discover/uniquecombination-validation",
+    "name": "discover/uniquecombination",
     "description": "unique check validation by combination value",
     "license": "MIT",
     "authors": [
@@ -14,9 +14,12 @@
     
      "autoload": {
         "psr-4": {
-            "Discover\\UniqueCombination\\": "discover/uniquecombination/src/"
+            "": "src/"
         }
     },
+
+    "minimum-stability": "dev",
+
     "extra": {
         "laravel": {
             "providers": [
@@ -24,5 +27,5 @@
             ]
         }
     },
-    "minimum-stability": "dev"
+    
 }
