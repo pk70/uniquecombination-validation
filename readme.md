@@ -40,7 +40,7 @@ See the [Validation documentation](http://laravel.com/docs/validation) of Larave
 
 If you have a database table `my_table` and column which name is `column_1` and the value is `(25,36,21)` already exists.
 
-Your input field name is `name_1` and `value` is (36,21,25).
+Your input field name is `name_1` and `value` is `(36,21,25)`.
 You want to check unique validation with your database column so that duplicate entry prevent with this comma separated combination:
 
 ```php
@@ -48,7 +48,7 @@ $request->validate([
     'name_1' => 'required|unique_combination:my_table,column_1,","',
 ]);
 ```
-You can also use `any separator` like('-','+') as your need.
+You can also use `any separator` like`('-','+')` as your need.
 You can use and `sort of combination` this
 
 # License
