@@ -29,7 +29,7 @@ Add the following to your `providers` array in `config/app.php`:
 Use it like any `Validator` :
 
 ```php
-$request->validate([
+$validator = Validator::make($request->all(), [
     'title' => 'required|unique_combination:table_name,column_name,separator',
 ]);
 ```
@@ -44,7 +44,7 @@ Your input field name is `name_1` and `value` is `(36,21,25)`.
 You want to check unique validation with your database column so that duplicate entry prevent with this comma separated combination:
 
 ```php
-$request->validate([
+$validator = Validator::make($request->all(), [
     'name_1' => 'required|unique_combination:my_table,column_1,","',
 ]);
 ```
@@ -57,7 +57,7 @@ Your input field name is `name` and `value` is `(Jannat-Jhon-akash)`.
 You want to check unique validation with your database column so that duplicate entry prevent with this comma separated combination:
 
 ```php
-$request->validate([
+$validator = Validator::make($request->all(), [
     'name' => 'required|unique_combination:my_table,name_string,"-"',
 ]);
 ```
