@@ -1,7 +1,7 @@
 # Unique Validation with combination For Laravel
 
 
-This package allows for unique validation with comma separated/other separated of sigle-column UNIQUE indexes.
+This package is for unique validation with comma separated value('1,2,4') or other separated value('a-k-i') of sigle-column duplicate entry check.
 
 ## Installation
 
